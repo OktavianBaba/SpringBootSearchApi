@@ -16,7 +16,7 @@ public class ProductController {
 
     public ProductController(ProductService productService) {
         this.productService = productService;
-    }mo
+    }
 
     @GetMapping("/search")
     public ResponseEntity<List<Product>> searchProducts(@RequestParam("query") String query){
